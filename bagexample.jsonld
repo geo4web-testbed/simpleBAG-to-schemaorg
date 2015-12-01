@@ -3,8 +3,7 @@
     "@id" : "http://example.org/bagexample/",
     "rdf:type" : {
       "@id" : "owl:Ontology"
-    },
-    "owl:versionInfo" : "Created with TopBraid Composer"
+    }
   }, {
     "@id" : "bagexample:1",
     "address:Locality" : "Appingedam",
@@ -22,112 +21,9 @@
       "@id" : "schema:GeoCoordinates"
     },
     "rdfs:comment" : "these  values are in EPSG::28992"
-  }, {
-    "@id" : "schema:GeoCoordinates",
-    "rdf:type" : {
-      "@id" : "rdfs:Class"
-    },
-    "subClassOf" : "owl:Thing"
-  }, {
-    "@id" : "schema:GeoShape",
-    "rdf:type" : {
-      "@id" : "rdfs:Class"
-    },
-    "subClassOf" : "owl:Thing"
-  }, {
-    "@id" : "schema:PostalAddress",
-    "rdf:type" : {
-      "@id" : "rdfs:Class"
-    },
-    "subClassOf" : "owl:Thing"
-  }, {
-    "@id" : "schema:address",
-    "rdf:type" : {
-      "@id" : "rdf:Property"
-    },
-    "domain" : "schema:GeoShape",
-    "range" : "schema:PostalAddress"
-  }, {
-    "@id" : "address:Locality",
-    "rdf:type" : {
-      "@id" : "rdf:Property"
-    },
-    "domain" : "schema:PostalAddress",
-    "range" : "xsd:string"
-  }, {
-    "@id" : "schema:latitude",
-    "rdf:type" : {
-      "@id" : "rdf:Property"
-    },
-    "domain" : "schema:GeoCoordinates",
-    "range" : "xsd:string"
-  }, {
-    "@id" : "schema:longitude",
-    "rdf:type" : {
-      "@id" : "rdf:Property"
-    },
-    "domain" : "schema:GeoCoordinates",
-    "range" : "xsd:string"
-  }, {
-    "@id" : "schema:postalCode",
-    "rdf:type" : {
-      "@id" : "rdf:Property"
-    },
-    "domain" : "schema:PostalAddress",
-    "range" : "xsd:string"
-  }, {
-    "@id" : "schema:streetAddress",
-    "rdf:type" : {
-      "@id" : "rdf:Property"
-    },
-    "domain" : "schema:PostalAddress",
-    "range" : "xsd:string"
-  } ],
+  }], 
   "@context" : {
-    "range" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
-      "@type" : "@id"
-    },
-    "domain" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
-      "@type" : "@id"
-    },
-    "address" : {
-      "@id" : "http://schema.org/address",
-      "@type" : "@id"
-    },
-    "longitude" : {
-      "@id" : "http://schema.org/longitude",
-      "@type" : "@id"
-    },
-    "latitude" : {
-      "@id" : "http://schema.org/latitude",
-      "@type" : "@id"
-    },
-    "comment" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
-      "@type" : "@id"
-    },
-    "subClassOf" : {
-      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-      "@type" : "@id"
-    },
-    "versionInfo" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
-      "@type" : "@id"
-    },
-    "postalCode" : {
-      "@id" : "http://schema.org/postalCode",
-      "@type" : "@id"
-    },
-    "streetAddress" : {
-      "@id" : "http://schema.org/streetAddress",
-      "@type" : "@id"
-    },
-    "addressLocality" : {
-      "@id" : "http://schema.org/addressLocality",
-      "@type" : "@id"
-    },
+   
     "schema" : "http://schema.org/",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
     "xsd" : "http://www.w3.org/2001/XMLSchema#",
