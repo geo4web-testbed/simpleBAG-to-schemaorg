@@ -6,7 +6,7 @@
     }
   }, {
     "@id" : "bagexample:1",
-    "address:Locality" : "Appingedam",
+    "schema:addressLocality" : "Appingedam",
     "schema:postalCode" : "9901GE",
     "schema:streetAddress" : "Fivelkade W 4",
     "rdf:type" : {
