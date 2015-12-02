@@ -1,11 +1,11 @@
 {
-  "@context": { 
-    "schema": "http://schema.org", 
-      
-       "source" : { "@id" : "http://interactive-instruments.de/ldproxy/source", "@type" : "@id" }, 
-       "metadata" : { "@id" : "http://interactive-instruments.de/ldproxy/metadata", "@type" : "@id" } 
-    }
-  ,
+  "@context": [
+    "http://schema.org", 
+    {
+     "source" : { "@id" : "http://interactive-instruments.de/ldproxy/source", "@type" : "@id" }, 
+      "metadata" : { "@id" : "http://interactive-instruments.de/ldproxy/metadata", "@type" : "@id" } 
+    } 
+  ],
   "@id" : "http://example.org/bag/inspireadressen/all/7078852",
   "@type" : "Place",
   "address" : {
