@@ -28,5 +28,5 @@
     "fileFormat" : "text/html"
   },
   "source" : "http://geodata.nationaalgeoregister.nl/inspireadressen/wfs?service=WFS&request=GetFeature&version=2.0.0&typenames=inspireadressen:inspireadressen&RESOURCEID=inspireadressen.7078852",
-  "metadata" : "http://example.org/bag/inspireadressen/all/7078852"
+  "metadata" : "http://example.org/bag/inspireadressen"
 }
