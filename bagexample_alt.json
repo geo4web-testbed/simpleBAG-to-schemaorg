@@ -1,0 +1,32 @@
+{
+  "@context": [ 
+    "http://schema.org", 
+    {  
+       "source" : { "@id" : "http://interactive-instruments.de/ldproxy/source", "@type" : "@id" }, 
+       "metadata" : { "@id" : "http://interactive-instruments.de/ldproxy/metadata", "@type" : "@id" } 
+    }
+  ],
+  "@id" : "http://example.org/bag/inspireadressen/all/7078852",
+  "@type" : "Place",
+  "address" : {
+    "@type" : "PostalAddress",
+    "addressCountry" : "NL",
+    "addressLocality" : "Valkenswaard",
+    "postalCode" : "5552AA",
+    "streetAddress" : "Eindhovenseweg 85A"
+  },
+  "geo" : {
+    "@type" : "GeoCoordinates",
+    "addressCountry" : "NL",
+    "postalCode" : "5552AA",
+    "latitude" : "51.35536174716568",
+    "longitude" : "5.460531154211716"
+  },
+  "hasMap" : {
+    "@type" : "Map",
+    "url" : "http://example.com/some/html/with/a/map/that/could/be/embedded/or/viewed/alone",
+    "fileFormat" : "text/html"
+  },
+  "source" : "http://geodata.nationaalgeoregister.nl/inspireadressen/wfs?service=WFS&request=GetFeature&version=2.0.0&typenames=inspireadressen:inspireadressen&RESOURCEID=inspireadressen.7078852",
+  "metadata" : "http://example.org/bag/inspireadressen/all/7078852"
+}
