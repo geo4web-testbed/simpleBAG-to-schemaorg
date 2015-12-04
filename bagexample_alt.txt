@@ -1,0 +1,135 @@
+The root resource (landing page):
+
+{
+  "@context": "http://schema.org",
+  "@id" : "http://example.org/bag",
+  "@type" : "Dataset",
+  "name" : "INSPIRE Adressen WFS",
+  "description" : "INSPIRE Adressen themalaag, gevuld met relevante objecten uit de Basisregistratie Adressen en Gebouwen (BAG), beheerd door het Kadaster. / Service Adressen, gevuld met relevante objecten uit de Basisregistratie Adressen en Gebouwen (BAG), beheerd door het Kadaster.",
+  "keywords" : "Adressen",
+  "inLanguage" : "nl",
+  "isBasedOnUrl" : "http://geodata.nationaalgeoregister.nl/inspireadressen/wfs?service=WFS&request=GetCapabilities",
+  "provider" : {
+    "@type" : "Organization",
+    "name" : "PDOK",
+    "contactPoint" : {
+      "@type" : "ContactPoint",
+      "name": "KlantContactCenter PDOK",
+      "email" : "beheerPDOK@kadaster.nl"
+    },
+    "address" : {
+      "@type" : "PostalAddress",
+      "addressCountry" : "NL",
+      "addressLocality" : "Apeldoorn"
+    }
+  },
+  "version" : "2006",
+  "license" : "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
+  "image" : "https://geodata.nationaalgeoregister.nl/inspireadressen/ows?LAYERS=inspireadressen&TRANSPARENT=true&FORMAT=image%2Fpng&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A28992&BBOX=118700,480500,119200,480845&WIDTH=364&HEIGHT=252",
+  "dateCreated" : "2012-06-22",  
+  "dateModified" : "2015-11-13",  
+  "spatial" : {
+    "@type" : "Place",
+    "geo" : {
+      "@type" : "GeoShape",
+      "box" : "3.37087,50.7539 7.21097,53.4658"
+    }
+  },  
+  "hasPart" : [ "http://example.org/bag/inspireadressen" ],
+  "datasetTimeInterval" : "1996-01-01/2015-11-13",
+  "sameAs" : "http://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&version=2.0.2&request=GetRecordById&outputschema=http://www.isotc211.org/2005/gmd&elementsetname=full&id=3a97fbe4-2b0d-4e9c-9644-276883400dd7"
+}
+
+The layer resource for the inspireadressen feature type:
+
+{
+  "@context": [ "http://schema.org", "http://www.w3.org/ns/hydra/context.jsonld" ],
+  "@id" : "http://example.org/bag/inspireadressen",
+  "@type" : [ "Dataset", "hydra:Collection" ],
+  "name" : "inspireadressen",
+  "description" : "INSPIRE Adressen afkomstig uit de basisregistratie Adressen, beschikbaar voor heel Nederland",
+  "keywords" : "Adressen",
+  "inLanguage" : "nl",
+  "isBasedOnUrl" : "http://geodata.nationaalgeoregister.nl/inspireadressen/wfs?service=WFS&request=GetCapabilities",
+  "provider" : {
+    "@type" : "Organization",
+    "name" : "PDOK",
+    "contactPoint" : {
+      "@type" : "ContactPoint",
+      "name": "KlantContactCenter PDOK",
+      "email" : "beheerPDOK@kadaster.nl"
+    },
+    "address" : {
+      "@type" : "PostalAddress",
+      "addressCountry" : "NL",
+      "addressLocality" : "Apeldoorn"
+    }
+  },
+  "version" : "2006",
+  "license" : "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
+  "dateCreated" : "2012-06-22",  
+  "dateModified" : "2015-11-13",  
+  "spatial" : {
+    "@type" : "Place",
+    "geo" : {
+      "@type" : "GeoShape",
+      "box" : "3.053,47.975 7.24,53.504"
+    }
+  },  
+  "isPartOf" : [ "http://example.org/bag" ],
+  "hasPart" : [ "http://example.org/bag/inspireadressen/woonplaats", "http://example.org/bag/inspireadressen/postcode" ],
+  "datasetTimeInterval" : "1996-01-01/2015-11-13",
+  "sameAs" : [ "http://example.org/bag/inspireadressen/all?page=1", "http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=76091be7-358a-4a44-8182-b4139c96c6a4" ],
+  "hydra:totalItems": "8783741",
+  "hydra:member": [
+	{ 
+		"@id" : "http://example.org/bag/inspireadressen/all/7078852",
+		"description" : "Eindhovenseweg 85A, 5552AA Valkenswaard, Nederland"
+	},
+	{ 
+	  "@id" : "http://example.org/bag/inspireadressen/all/1234"
+	},
+	{ 
+	  "@id" : "http://example.org/bag/inspireadressen/all/5678"
+	},
+	{ 
+	  "@id" : "http://example.org/bag/inspireadressen/all/more"
+	}
+  ],
+  "hydra:view": {
+	 "@id": "http://example.org/bag/inspireadressen/all?page=1",
+	 "@type": "hydra:PartialCollectionView",
+	 "hydra:first": "http://example.org/bag/inspireadressen/all?page=1",
+	 "hydra:next": "http://example.org/bag/inspireadressen/all?page=2",
+	 "hydra:last": "http://example.org/bag/inspireadressen/all?page=878374"
+  }
+}
+
+A sample feature:
+
+{
+  "@context": [ "http://schema.org", "http://www.w3.org/ns/hydra/context.jsonld" ],
+  "@id" : "http://example.org/bag/inspireadressen/all/7078852",
+  "@type" : [ "Place", "CreativeWork", "hydra:Class" ],
+  "description" : "Eindhovenseweg 85A, 5552AA Valkenswaard, Nederland",
+  "address" : {
+	  "@type" : "PostalAddress",
+	  "addressCountry" : "NL",
+	  "addressLocality" : "Valkenswaard",
+	  "postalCode" : "5552AA",
+	  "streetAddress" : "Eindhovenseweg 85A"
+  },
+  "geo" : {
+	  "@type" : "GeoCoordinates",
+	  "latitude" : "51.35536174716568",
+	  "longitude" : "5.460531154211716"
+  },
+  "hasMap" : {
+	  "@type" : "Map",
+	  "url" : "http://example.org/bag/inspireadressen/all/7078852/map",
+	  "fileFormat" : "text/html"
+  },
+  "isPartOf" : [ "http://example.org/bag/inspireadressen/all" ],
+  "sameAs" : [ "woonplaats/Valkenswaard/7078852", "postcode/5552AA/7078852" ]
+}
+
