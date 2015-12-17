@@ -1,0 +1,42 @@
+{"@context": "http://schema.org",
+  "@id" : "http://example.org/bag/id/inspireadressen",
+  "@type" : "Dataset",
+  "name" : "inspireadressen",
+  "description" : "INSPIRE Adressen afkomstig uit de basisregistratie Adressen, beschikbaar voor heel Nederland",
+  "keywords" : "Adressen",
+  "inLanguage" : "nl",
+  "isBasedOnUrl" : "http://geodata.nationaalgeoregister.nl/inspireadressen/wfs?service=WFS&request=GetCapabilities",
+  "provider" : {
+    "@type" : "Organization",
+    "name" : "PDOK",
+     "url": "https://www.pdok.nl" ,
+    "contactPoint" : {
+      "@type" : "ContactPoint",
+      "name": "KlantContactCenter PDOK",
+      "email" : "beheerPDOK@kadaster.nl",
+      "contactType": "customer support" ,
+       "url": "https://www.pdok.nl/nl/over-pdok/contact-met-pdok" 
+    },
+    "address" : {
+      "@type" : "PostalAddress",
+      "addressCountry" : "NL",
+      "addressLocality" : "Apeldoorn"
+    }
+  },
+  "version" : "2006",
+  "license" : "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
+  "dateCreated" : "2012-06-22",  
+  "dateModified" : "2015-11-13",  
+  "spatial" : {
+    "@type" : "Place",
+    "geo" : {
+      "@type" : "GeoShape",
+      "box" : "3.053,47.975 7.24,53.504"
+    }
+  },  
+  "isPartOf" :  {"@id": "http://example.org/bag" , "@type": "Dataset"},
+  "hasPart" : [ {"@id":"http://example.org/bag/inspireadressen/woonplaats", "@type": "Dataset"} ,{"@id": "http://example.org/bag/inspireadressen/postcode", "@type": "Dataset"} ],
+  "datasetTimeInterval" : "1996-01-01/2015-11-13",
+  "sameAs" : [ "http://example.org/bag/inspireadressen/all?page=1", "http://www.nationaalgeoregister.nl/geonetwork/srv/dut/xml.metadata.get?uuid=76091be7-358a-4a44-8182-b4139c96c6a4" ]
+  
+}

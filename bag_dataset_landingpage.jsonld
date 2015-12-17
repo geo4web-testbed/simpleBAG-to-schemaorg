@@ -1,0 +1,43 @@
+{
+  "@context": "http://schema.org",
+  "@id" : "http://example.org/bag",
+  "@type" : "Dataset",
+  "name" : "INSPIRE Adressen WFS",
+  "description" : "INSPIRE Adressen themalaag, gevuld met relevante objecten uit de Basisregistratie Adressen en Gebouwen (BAG), beheerd door het Kadaster. / Service Adressen, gevuld met relevante objecten uit de Basisregistratie Adressen en Gebouwen (BAG), beheerd door het Kadaster.",
+  "keywords" : "Adressen",
+  "inLanguage" : "nl",
+  "isBasedOnUrl" : "http://geodata.nationaalgeoregister.nl/inspireadressen/wfs?service=WFS&request=GetCapabilities",
+  "provider" : {
+    "@type" : "Organization",
+    "name" : "PDOK",
+     "http://schema.org/url": "https://www.pdok.nl" ,
+    "contactPoint" : {
+      "@type" : "ContactPoint",
+      "name": "KlantContactCenter PDOK",
+      "email" : "beheerPDOK@kadaster.nl",
+      "http://schema.org/contactType": "customer support" ,
+       "http://schema.org/url": "https://www.pdok.nl/nl/over-pdok/contact-met-pdok" 
+    },
+    "address" : {
+      "@type" : "PostalAddress",
+      "addressCountry" : "NL",
+      "addressLocality" : "Apeldoorn"
+    }
+  },
+  "version" : "2006",
+  "license" : "http://creativecommons.org/publicdomain/mark/1.0/deed.nl",
+  "image" : "https://geodata.nationaalgeoregister.nl/inspireadressen/ows?LAYERS=inspireadressen&TRANSPARENT=true&FORMAT=image%2Fpng&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&EXCEPTIONS=application%2Fvnd.ogc.se_inimage&SRS=EPSG%3A28992&BBOX=118700,480500,119200,480845&WIDTH=364&HEIGHT=252",
+  "dateCreated" : "2012-06-22",  
+  "dateModified" : "2015-11-13",  
+  "spatial" : {
+    "@type" : "Place",
+    "geo" : {
+      "@type" : "GeoShape",
+      "box" : "3.37087,50.7539 7.21097,53.4658"
+    }
+  },  
+  "hasPart" : {"@id": "http://example.org/bag/id/inspireadressen" ,
+  "@type": "http://schema.org/Dataset"},
+  "datasetTimeInterval" : "1996-01-01/2015-11-13",
+  "sameAs" : "http://www.nationaalgeoregister.nl/geonetwork/srv/dut/csw?service=CSW&version=2.0.2&request=GetRecordById&outputschema=http://www.isotc211.org/2005/gmd&elementsetname=full&id=3a97fbe4-2b0d-4e9c-9644-276883400dd7"
+}
